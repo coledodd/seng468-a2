@@ -1,3 +1,5 @@
+modified version from lab
+
 # Express Redis Docker app
 
 Requirements: [Docker Community Edition](https://www.docker.com/community-edition)
@@ -8,19 +10,13 @@ It will then be started on port 3000.
 
 # Endpoints
 
-## Hello World
-
+## View all orders
+Create another page in your web app where admins can retrieve all orders placed so far sorted based on the order dates.
 ```sh
 curl http://localhost:3000
 ```
 
-## Storing Data
+## Placing orders
 ```sh
-curl http://localhost:3000/store/my-key\?some\=value\&some-other\=other-value
-```
-
-## Fetching Data
-
-```sh
-curl http://localhost:3000/my-key
+curl http://localhost:3000/place_order/$user_name/$item
 ```
